@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>¿Cómo puedo ayudarte?</h1>
+        <p>Si tenés alguna consulta o estás interesado/a en trabajar conmigo,</p>
+        <p>te invito a que completes el siguiente formulario.</p>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nom">Nombre</label>
+                <input type="text" name="nombre" id="nom" required autofocus>
+            </p>
+            <p>
+                <input type="text" name="apellido" placeholder="apellido" id="apellido" required>
+            </p>
+            <p>
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" name="fecha de nacimiento" id="fecha" required>
+            </p>
+
+            <p>
+               <label for="sexo">Sexo</label> 
+           
+                <input type="radio" name="Sexo" value="hombre" id="sexo">
+                <label>Hombre</label>
+
+                <input type="radio" name="Sexo" value="mujer" id="mujer">
+                <label>Mujer</label> 
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Crea un usuario</legend>
+            <p>
+                <label for="user">Email</label>
+                <input type="text" name="user" id="user" required>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass" required>
+            </p>
+        </fieldset>
+        
+        
+        <label>Hobbies</label>
+        <ul>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+                <label for="bailar">Bailar</label> 
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+                <label for="cantar">Cantar</label>
+            </li>
+            <li>
+                <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+                <label for="nadar">Nadar</label>
+            </li>
+        </ul>
+        <p>
+            <label for="titulo">Titulo</label>
+            <select name="titulo" id="titulo">             
+                <option value="Primario">Primario</option>
+                <option value="Secundario">Secundario</option>
+                <option value="Terciario">Terciario</option>
+                <option value="Universitario">Universiario</option>
+            </select>    
+        </p>
+        <p>
+            <label for="Interés">Estoy interesado/a en:</label>
+            <select name="interes" id="Interés">
+                <optgroup label="Página Web">
+                <option value="Crear página">Crear página web</option>
+                <option value="Mantenimiento página web">Mantenimiento de página web</option>
+                <option value="Seguridad de página web">Seguridad de página web</option>
+            </optgroup>
+            <optgroup label="Apps">
+                <option value="Aplicaciones">Apps</option>
+                <option value="Crear página">Crear nueva app</option>
+                <option value="Mantenimiento página web">Mantenimiento de app</option>
+                <option value="Seguridad de página web">Seguridad de app</option>
+            </optgroup>
+            </select>
+            
+        </p>
+        <p>
+            <label for="comentarios" id="coments">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="20" rows="2"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>
