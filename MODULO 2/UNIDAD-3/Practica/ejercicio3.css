@@ -98,3 +98,9 @@ html, body{
     from{left: -300px}
     to{left: 100%}
 }
+
+@keyframes jump{
+    0% { top: -60px}
+    50%{ top: -120px}
+    100%{top: -60px}
+}
