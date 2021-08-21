@@ -1,0 +1,246 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: #2a2e37;
+    padding: 1em 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight:300;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+}
+
+nav{
+    background-color:aqua;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 16.5%;
+}
+
+nav ul li a{
+    color: red;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 0.2em 0.4em;
+}
+
+nav ul li a:hover{
+    background-color: yellow;
+}
+
+footer{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 1em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+nav ul li a.activo{
+    /* la a que tenga la clase activo se pone en verde */
+    background-color: green;
+}
+
+.holder{
+/* la clase holder hace que todo el contenido de cada etiqueta este centrado. el ancho estará limitado */
+width: 960px;
+margin: 0 auto;
+}
+
+h2{
+    color: #2e64a1;
+    font-weight: 500;
+    margin: 0 0 1em
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.main-image{
+    display: grid;
+    background-image: url(../img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 330px;
+    width: 100%;
+
+}
+
+.image{
+    width: 100%;
+}
+
+.columnas{
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+.bienvenidos, .testimonios{
+    box-sizing: border-box;
+}
+
+.bienvenidos{
+    width: 75%;
+    padding-right: 2em;
+}
+
+.testimonios{
+    width: 25%;
+}
+
+.testimonio{
+    background-color: #ccc;
+    padding: 1em;
+}
+
+.testimonio .cita{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.4em;
+    display: block;
+}
+
+.testimonio .autor{
+    font-size: 1em;
+    text-align: center;
+    margin: 1em 0;
+    display: block;
+}
+/* fin home */
+
+/* inicio nosotros */
+
+.historia{
+    font-size: 1em;
+}
+
+.personas{
+    overflow: hidden;
+}
+
+.persona{
+    text-align: center;
+    width: 20%;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    float: left;
+    margin-left: 2.25%;
+    box-sizing: border-box;
+}
+
+.persona .belen{
+    width: 80%;
+}
+
+.persona .jose{
+    width: 55%;
+}
+
+.persona img{
+    max-width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
+    margin: 0.8em 0 1em;  
+}
+
+.persona h5, 
+.persona h6{
+    text-align: center;
+    font-weight: bolder;
+    color: #2e64a1;
+    margin: 0;
+}
+.persona h5{
+    font-size: 1.3em;
+}
+
+.persona h6{
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.persona p{
+    font-size: 0.9em;
+    color: #444;
+    margin: 0 1em 1em;
+}
+
+.persona:first-child{
+    margin-left: 0;
+}
+/* fin nosotros */
+
+.servicio{
+    border: 1px solid grey;
+    border-radius: 0.7em;
+    margin: 1em 0;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.servicio .info{
+    width: 70%;
+}
+
+.servicio .info h4{
+    color: #2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 600;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+    padding-bottom: 0.5em;
+}
+
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+    margin: 0 0.2em 1em;
+}
+.servicio img{
+    border-radius: 2em;
+    width: 30%;
+}
+
+.servicio:nth-child(even) img{
+    float: right;
+    margin: 0 0 0 0em;
+}
+
+.servicio:nth-child(even) .info{
+    float: left;
+}
+.servicio:nth-child(odd) img{
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.servicio:nth-child(odd) .info{
+    float: right;
+}
+
+
