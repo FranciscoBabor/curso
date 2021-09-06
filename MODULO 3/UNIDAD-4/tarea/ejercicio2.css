@@ -1,0 +1,12 @@
+#my-textarea{
+    height: 150px;
+    weight: 100%;
+}
+
+#my-textarea-remaining-chars{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+}
