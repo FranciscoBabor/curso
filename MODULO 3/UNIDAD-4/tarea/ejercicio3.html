@@ -63,6 +63,7 @@
       ];
       let aprobado = alumnos.filter(alumno => alumno.nota >=7);
       console.log(aprobado);
+      aprobado.forEach(a => document.write(`${a.nombre} (${a.nota}) <br>`))
     </script>
   </body>
 </html>
